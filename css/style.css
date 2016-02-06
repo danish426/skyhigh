@@ -157,3 +157,5 @@ footer {width:100%;}
 .phone strong {color:#fff}
 .mrq img{width:80px; height:50px}
 .countryNames{margin-right: 30px}
+.tbl_marque {background-color: brown;}
+.tbl_marque  td{background-color: blue; width: 30px;}
