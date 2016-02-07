@@ -45,11 +45,93 @@
 
 div.img {
 	margin: 20px;
-	border: 1px solid blueviolet;
+	/*border: 1px solid blueviolet;*/
 	float: left;
-	width: 80px;
-	height: 75px;
+	width: 100px;
+	height: 85px;
+	display: inline-block;
+	color: #333;
 }
+
+h1+p a {
+	color: #333;
+}
+h1+p a:hover {
+	text-decoration: none;
+}
+h2 {
+	margin: 60px 15px 0;
+	padding: 0;
+	font-weight: 300;
+}
+h2 span {
+	margin-left: 1em;
+	color: #aaa;
+	font-size: 85%;
+}
+.column {
+	margin: 15px 15px 0;
+	padding: 0;
+}
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+	width: 300px;
+	height: 200px;
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+.column div span {
+	position: absolute;
+	bottom: -20px;
+	left: 0;
+	z-index: -1;
+	display: block;
+	width: 300px;
+	margin: 0;
+	padding: 0;
+	color: #444;
+	font-size: 18px;
+	text-decoration: none;
+	text-align: center;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	opacity: 0;
+}
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+
+figure {
+	width: 300px;
+	height: 200px;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+
 
 /*div.img:hover {
 	border: 1px solid #777;
@@ -111,14 +193,14 @@ div.desc {
 					<div class="slider-wrapper">
 						<div class="slider">
 						  <ul class="items">
-							<li><img src="images/Slider-img-1.jpg" alt="" />
+							<li><img src="images/slider-img-1.jpg"/>
 								<strong class="banner">
 									<strong class="b1">Our Services</strong>
 									<strong class="b2">---</strong>
 									<strong class="b3">We are here to assist individuals to apply for jobs.</strong>
 								</strong>
 							</li>
-							<li><img src="images/slider-img5.jpg" alt="" />
+							<li><img src="images/slider-img5.jpg"/>
 								<strong class="banner">
 									<strong class="b1">Talent Sourcing</strong>
 									<strong class="b2">---</strong>
@@ -127,28 +209,28 @@ div.desc {
 
 							</li>
 
-							<li><img src="images/slider-img4.jpg" alt="" />
+							<li><img src="images/slider-img4.jpg"/>
 								<strong class="banner">
 									<strong class="b1">HR Consulting</strong>
 									<strong class="b2">---</strong>
 									<strong class="b3">Our mission is to work with clients to reinforce an HR culture..</strong>
 								</strong>
 							</li>
-							<li><img src="images/slider-img-3.jpg" alt="" />
+							<li><img src="images/slider-img-3.jpg"/>
 								<strong class="banner">
 									<strong class="b1">Documentation Attestations</strong>
 									<strong class="b2">---</strong>
 									<strong class="b3">our staff will manage these attestations...</strong>
 								</strong>
 							</li>
-							<li><img src="images/pic.png" alt="" />
+							<li><img src="images/pic.png"/>
 								<strong class="banner">
 									<strong class="b1" id="outsorcing">Outsourcing</strong>
 									<strong class="b2">---</strong>
 									<strong class="b3">so you can use enterprise’s own human capital...</strong>
 								</strong>
 							</li>
-							<li><img src="images/slider-img6.jpg" alt="" />
+							<li><img src="images/slider-img6.jpg"/>
 								<strong class="banner">
 									<strong class="b1">Relation Consultancy</strong>
 									<strong class="b2">---</strong>
@@ -250,15 +332,15 @@ div.desc {
 
 									<div class="img">
 
-											<img src="images/Flag/2000px-Flag_of_Saudi_Arabia.svg.png" alt="Trolltunga Norway" width="80" height="60">
+											<img src="images/Flag/2000px-Flag_of_Saudi_Arabia.svg.png" width="100" height="60">
 
-										<div style="padding-top: 10px">Saudi Arabia</div>
+										<div class="desc">Saudi Arabia</div>
 									</div>
 									<div style="display: inline-block"></div>
 
 									<div class="img">
 
-											<img src="images/Flag/UNITEDARABEMIRATES.gif" alt="Forest" width="80" height="50">
+											<img src="images/Flag/UNITEDARABEMIRATES.gif" width="100" height="60">
 
 										<div class="desc">U.A.E</div>
 									</div>
@@ -267,7 +349,7 @@ div.desc {
 
 									<div class="img">
 
-											<img src="images/Flag/Qatar-flag.jpg" alt="Northern Lights" width="80" height="50">
+											<img src="images/Flag/Qatar-flag.jpg" width="100" height="60">
 
 										<div class="desc">Qatar</div>
 									</div>
@@ -276,7 +358,7 @@ div.desc {
 
 									<div class="img">
 
-											<img src="images/Flag/Flag_of_Oman.svg.png" alt="Mountains" width="80" height="50">
+											<img src="images/Flag/Flag_of_Oman.svg.png" width="100" height="60">
 
 										<div class="desc">Oman</div>
 									</div>
@@ -286,10 +368,10 @@ div.desc {
 
 									<div class="img">
 
-										<img src="images/Flag/south_african_flag_vector.png" alt="Mountains" width="80" height="50">
+										<img src="images/Flag/south_african_flag_vector.png" width="100" height="60">
 
-										<div style="padding-top: 10px">South Africa</div>
-										<!--<div class="desc">South Africa</div>-->
+
+										<div class="desc">South Africa</div>
 									</div>
 
 									<div style="display: inline-block"></div>
@@ -297,7 +379,7 @@ div.desc {
 
 									<div class="img">
 
-										<img src="images/Flag/1280px-Flag_of_Germany.svg.png" alt="Mountains" width="80" height="50">
+										<img src="images/Flag/1280px-Flag_of_Germany.svg.png" width="100" height="60">
 
 										<div class="desc">Germany</div>
 									</div>
@@ -307,7 +389,7 @@ div.desc {
 
 									<div class="img">
 
-										<img src="images/Flag/eu-european-union-flags-309182-1600x1200.jpg" alt="Mountains" width="80" height="50">
+										<img src="images/Flag/eu-european-union-flags-309182-1600x1200.jpg" width="100" height="60">
 
 										<div class="desc">Europen</div>
 									</div>
@@ -374,6 +456,15 @@ div.desc {
 						</div>
 						</a>
 
+						<div>
+							<figure><img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" /></figure>
+							<span>Hover</span>
+						</div>
+
+
+
+
+
 
 					</div>
 				</div>
@@ -400,6 +491,7 @@ div.desc {
 							</div>
 							<div class="col-2" style="width: 178px">
 								<h4>Quick Link</h4>
+								<ul>
 								<li>
 								<a href="index.html" class="style16">Home</a></li>
 									<li>
@@ -410,6 +502,7 @@ div.desc {
 									<a href="clientele.html" class="style16">Clientele</a></li>
 									<li>
 									<a href="contacts.html" class="style16">Contact Us</a></li>
+								</ul>
 
 
 								<p>&nbsp;
