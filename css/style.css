@@ -11,7 +11,7 @@ a:hover {text-decoration:none}
 .wrapper {width:100%;overflow:hidden}
 .extra-wrap {overflow:hidden}
 .bg {width:100%;background:url(../images/bg.jpg) center 0 no-repeat}
-.main {width:984px;padding:0;margin:0 auto;font-size:0.875em;line-height:1.285em}
+.main {width:1050px;padding:0;margin:0 auto;font-size:0.875em;line-height:1.285em}
 p {margin-bottom:18px}
 .p0 {margin-bottom:0px}
 .p1 {margin-bottom:6px}
@@ -72,7 +72,7 @@ h1 {padding:0px 0 0 40px;position:relative;float:left}
 .menu li a {display:inline-block;width:196px;font-size:17px;line-height:1.22em;padding:18px 0 36px;margin-top:10px;color:#fff;background:#333;text-align:center;border-radius:18px 18px 0 0;-moz-border-radius:18px 18px 0 0;-webkit-border-radius:18px 18px 0 0}
 .menu li a.active, .menu li a:hover {color:#0f0f0f;background:#fff;padding:28px 0 36px;margin:0}
 /* slider */
-.slider-wrapper {overflow:hidden;width:984px;position:absolute;top:-16px;left:-1px;background:#fff;border-radius:0 18px 0 0;-moz-border-radius:0 18px 0 0;-webkit-border-radius:0 18px 0 0}
+.slider-wrapper {overflow:hidden;width:1050px;position:absolute;top:-16px;left:-1px;background:#fff;border-radius:0 18px 0 0;-moz-border-radius:0 18px 0 0;-webkit-border-radius:0 18px 0 0}
 .slider {height:403px;width:948px;margin:10px auto}
 .items {display:none}
 .pagination {position:absolute;top:0;z-index:999}
@@ -161,5 +161,5 @@ footer {width:100%;}
 .tbl_marque  td{background-color: blue; width: 50px; text-align: center}*/
 .mrq{width: 1100px;
 height: 110px}
-
+.socialIcons{float: right; margin: 40px 0 0 0;}
 
