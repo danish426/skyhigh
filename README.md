@@ -8,7 +8,7 @@ i am creating *mobile Aap*
 these are the task i will do
 - [x] Finish my changes
 
-- [x] Login
+- [] Login
 
 - [] Signup
 
