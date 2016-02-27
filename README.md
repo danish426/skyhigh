@@ -6,6 +6,7 @@ Find me my [FaceBook](https://www.facebook.com/danish.qamar.56)
 i am creating *mobile Aap*
 
 these are the task i will do
+- [x] Finish my changes
 
 - [x]Login
 
